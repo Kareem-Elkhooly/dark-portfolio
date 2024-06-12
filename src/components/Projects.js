@@ -58,14 +58,14 @@ function Projects() {
               <div id="projectsSlide" className="projects flex flex-row items-start justify-start gap-[1.5rem] w-full rounded-sm overflow-x-auto no-scrollbar pb-12">
                 {projects.data.map((project) => {
                   return (
-                    <Link to={`/work/#${project._id}`} key={project._id} className="rounded-sm overflow-hidden object-center h-[35rem] min-w-[29rem] maxmob:h-[30rem] maxmob:min-w-[22rem] smmob:h-[27rem]">
+                    <div key={project._id} className="rounded-sm overflow-hidden object-center h-[35rem] min-w-[29rem] maxmob:h-[30rem] maxmob:min-w-[22rem] smmob:h-[27rem]">
                       <img
                         className="w-full h-full object-cover"
                         loading="lazy"
                         alt={"image-for-"+project.title.en}
                         src={project.images[0].url}
                       />
-                    </Link>
+                    </div>
                   );
                 })}
               </div>
