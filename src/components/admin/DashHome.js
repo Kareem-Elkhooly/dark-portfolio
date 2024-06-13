@@ -74,7 +74,9 @@ const DashHome = () => {
             </Link>
           </div>
             {messages.loading ? (
-              <div className="text-[1.5rem] mb-[2.5rem] text-center animate-pulse text-darkslategray font-semibold"><FontAwesomeIcon icon={faSpinner} spinPulse spin /></div>
+              <div className="text-[1.5rem] mb-[2.5rem] text-center animate-pulse text-darkslategray font-semibold">
+                <FontAwesomeIcon icon={faSpinner} spinPulse spin />
+              </div>
             ):(null)}
             {messages.error && !messages.loading ?(
               <div>

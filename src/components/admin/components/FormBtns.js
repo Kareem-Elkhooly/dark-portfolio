@@ -25,7 +25,7 @@ export default function FormBtns({onreset, onsubmit, waite, id, title}) {
         return(
             <>
                 <span>wait</span>
-                <FontAwesomeIcon icon={faSpinner} spin fade className="mb-[1px]" />
+                <FontAwesomeIcon icon={faSpinner} spinPulse spin className="mb-[1px]" />
             </>
         )
     } 
