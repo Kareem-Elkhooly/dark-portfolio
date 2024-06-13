@@ -27,7 +27,7 @@ export default function InfoLanguage({state}) {
     <div key={state.data._id} className="flex flex-col gap-4 text-[1rem] text-darkslategray bg-gainsboro-100 rounded-md px-8 py-6 smmob:px-4 smmob:py-4">
         <div className="flex flex-col gap-6 items-start justify-between">
             <div className="flex justify-between gap-2 items-center capitalize text-whitesmoke text-[1.1rem] w-full bg-darkslategray py-[4px] px-4 rounded-md">
-                <span>language informations</span> <EditBtn section={"languageInformations"}/>
+                <span>language informations</span> <EditBtn section={"languageInformation"}/>
             </div>
             <div className='flex flex-col items-start justify-start px-2'>
                 <span className='text-darkslategray capitalize pb-2'>in english</span>
