@@ -167,7 +167,7 @@ const ContactFeildsCom = () => {
                 </div>
                 {waite==="yes"?(
                     <button type="submit" disabled className="opacity-70 flex items-center justify-center gap-2 text-[1rem] px-6 py-2 rounded font-semibold bg-gainsboro-200 text-darkslategray transition-all duration-200 ease-in">
-                        <FontAwesomeIcon icon={faSpinner} spin fade className="mb-[1px]" /> 
+                        <FontAwesomeIcon icon={faSpinner} spinPulse spin className="mb-[1px]" /> 
                     </button>
                 ):(
                     <>

@@ -74,7 +74,9 @@ const DashHome = () => {
             </Link>
           </div>
             {messages.loading ? (
-              <div className="text-[1.5rem] mb-[2.5rem] text-center animate-pulse text-darkslategray font-semibold"><FontAwesomeIcon icon={faSpinner} spinPulse spin /></div>
+              <div className="text-[1.5rem] mb-[2.5rem] text-center animate-pulse text-darkslategray font-semibold">
+                <FontAwesomeIcon icon={faSpinner} spinPulse spin />
+              </div>
             ):(null)}
             {messages.error && !messages.loading ?(
               <div>
@@ -107,7 +109,9 @@ const DashHome = () => {
         </div>
         <div className="flex flex-col gap-3 p-3 w-full mt-4 border-2 border-solid border-gainsboro-200 rounded-md">
           {globalInfo.loading || projects.loading || quickProjects.loading ?(
-            <div className="text-[1.5rem] py-8 text-center animate-pulse text-darkslategray font-semibold"><FontAwesomeIcon icon={faSpinner} spinPulse spin /></div>
+            <div className="text-[1.5rem] py-8 text-center animate-pulse text-darkslategray font-semibold">
+              <FontAwesomeIcon icon={faSpinner} spinPulse spin />
+            </div>
           ):(null)}
           {!globalInfo.loading && !projects.loading && !quickProjects.loading && globalInfo.error && projects.error && quickProjects.error ?(
             <div>
