@@ -57,7 +57,7 @@ const SmallProjects = () => {
               </div>
               {/* popup image */}
               <div className={`${currentImg?"fixed":"hidden"} top-0 left-0 z-50 bg-darkslategray w-full h-full`}>
-                <span onClick={()=>{setCurrentImg(null)}} className="absolute top-6 right-5 font-semibold text-[2.2rem] z-50 cursor-pointer text-whitesmoke select-none">
+                <span onClick={()=>{setCurrentImg(null)}} className="absolute top-4 right-5 font-semibold text-[2.2rem] z-50 cursor-pointer text-whitesmoke select-none">
                   &times;
                 </span>
                 <img src={currentImg} className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 block max-w-[95%] max-h-[95%] object-contain"/>

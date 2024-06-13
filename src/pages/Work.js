@@ -74,7 +74,7 @@ const Work = () => {
             <FontAwesomeIcon onClick={function(){nextImage(currentProj),setCurrentImg(document.getElementById(`img_${currentProj?._id}`).src)}} icon={faAngleRight}
               className="absolute z-50 text-[1.6rem] text-gainsboro-100 rounded px-2 py-4 -translate-y-1/2 top-[50%] right-10 smmob:right-5 cursor-pointer" 
             />
-            <span onClick={()=>{setCurrentImg(null)}} className="absolute top-6 right-5 font-semibold text-[2.2rem] z-50 cursor-pointer text-whitesmoke select-none">
+            <span onClick={()=>{setCurrentImg(null)}} className="absolute top-4 right-5 font-semibold text-[2.2rem] z-50 cursor-pointer text-whitesmoke select-none">
               &times;
             </span>
             <img src={currentImg} className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 block max-w-[95%] max-h-[95%] object-contain"/>
