@@ -105,7 +105,7 @@ const LoginFeilds = () => {
             <div className="flex items-end justify-end w-full mt-6">
                 {waite==="yes"?(
                     <button type="submit" disabled className="opacity-70 text-[1.1rem] px-8 py-2 rounded font-semibold bg-gainsboro-200 text-darkslategray transition-all duration-200 ease-in">
-                        <FontAwesomeIcon icon={faSpinner} spin fade className="mb-[1px]" /> 
+                        <FontAwesomeIcon icon={faSpinner} spinPulse spin className="mb-[1px]" /> 
                     </button>
                 ):(
                     <button 
