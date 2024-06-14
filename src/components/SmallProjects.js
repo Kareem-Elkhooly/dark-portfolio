@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretRight, faCaretLeft } from "@fortawesome/free-solid-svg-icons";
+import { faCaretRight, faCaretLeft, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { arFontFamily, enFontFamily } from "./Variables";
 
 const SmallProjects = () => {
@@ -57,9 +57,10 @@ const SmallProjects = () => {
               </div>
               {/* popup image */}
               <div className={`${currentImg?"fixed":"hidden"} top-0 left-0 z-50 bg-darkslategray w-full h-full`}>
-                <span onClick={()=>{setCurrentImg(null)}} className="absolute top-6 right-5 font-semibold text-[2.2rem] z-50 cursor-pointer text-whitesmoke select-none">
-                  &times;
-                </span>
+                <FontAwesomeIcon 
+                  icon={faXmark} onClick={()=>{setCurrentImg(null)}}
+                  className="absolute top-2 bg-darkslategray px-4 py-2 rounded-md right-5 text-[1.3rem] z-50 cursor-pointer text-whitesmoke select-none"
+                />
                 <img src={currentImg} className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 block max-w-[95%] max-h-[95%] object-contain"/>
               </div>
               <FontAwesomeIcon  

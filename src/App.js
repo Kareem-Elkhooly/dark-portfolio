@@ -36,6 +36,7 @@ import AdminUpdate from "./components/admin/AdminUpdate";
 import DashInfo from "./components/admin/DashInfo";
 import GlobalInfoUpdate from "./components/admin/GlobalInfoUpdate";
 import LanguageInfoUpdate from "./components/admin/LanguageInfoUpdate";
+import Project from "./pages/Project";
 
 function App() {
   const dispatch = useDispatch();
@@ -92,7 +93,7 @@ function App() {
       {/* site routes */}
       <Route path="/" element={<Home />} />
       <Route path="/work" element={<Work />} />
-      <Route path="/work/:id" element={<Work />} />
+      <Route path="/work/:id" element={<Project />} />
       <Route path="/contact" element={<Contact />} />
       {/* dashboard login routes */}
       <Route path="/admin" element={<Adimn />} />

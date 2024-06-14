@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
@@ -6,7 +6,7 @@ import Informations from "../components/Informations";
 import DescriptionJop from "../components/DescriptionJop";
 import Footer from "../components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretUp, faCaretDown, faCaretRight, faCaretLeft, faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import { faCaretUp, faCaretDown, faCaretRight, faCaretLeft, faAngleRight, faAngleLeft, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { arFontFamily, enFontFamily } from "../components/Variables";
 
 const Work = () => {
@@ -72,14 +72,15 @@ const Work = () => {
           {/* popup image */}
           <div className={`${currentImg?"fixed":"hidden"} top-0 left-0 z-50 bg-darkslategray w-full h-full`}>
             <FontAwesomeIcon onClick={function(){nextImage(currentProj),setCurrentImg(document.getElementById(`img_${currentProj?._id}`).src)}} icon={faAngleRight}
-              className="absolute z-50 text-[1.6rem] text-gainsboro-100 rounded px-2 py-4 -translate-y-1/2 top-[50%] right-10 smmob:right-5 cursor-pointer" 
+              className="absolute z-50 bg-darkslategray py-4 px-2 text-[1.4rem] text-gainsboro-100 rounded-md -translate-y-1/2 top-[50%] right-10 smmob:right-5 cursor-pointer" 
             />
-            <span onClick={()=>{setCurrentImg(null)}} className="absolute top-6 right-5 font-semibold text-[2.2rem] z-50 cursor-pointer text-whitesmoke select-none">
-              &times;
-            </span>
+            <FontAwesomeIcon 
+              icon={faXmark} onClick={()=>{setCurrentImg(null)}}
+              className="absolute top-2 bg-darkslategray px-4 py-2 rounded-md right-5 text-[1.3rem] z-50 cursor-pointer text-whitesmoke select-none"
+            />
             <img src={currentImg} className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 block max-w-[95%] max-h-[95%] object-contain"/>
             <FontAwesomeIcon onClick={function(){prevImage(currentProj),setCurrentImg(document.getElementById(`img_${currentProj?._id}`).src)}} icon={faAngleLeft}
-              className="absolute z-50 text-[1.6rem] text-gainsboro-100 rounded px-2 py-4 -translate-y-1/2 top-[50%] left-10 smmob:left-5 cursor-pointer" 
+              className="absolute z-50 bg-darkslategray py-4 px-2 text-[1.4rem] text-gainsboro-100 rounded-md -translate-y-1/2 top-[50%] left-10 smmob:left-5 cursor-pointer" 
             />
           </div>
           <FontAwesomeIcon onClick={function(){prevImage(project)}} id={"prevOf_"+project._id} icon={faCaretLeft}
