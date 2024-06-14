@@ -92,6 +92,7 @@ function App() {
       {/* site routes */}
       <Route path="/" element={<Home />} />
       <Route path="/work" element={<Work />} />
+      <Route path="/work/:id" element={<Work />} />
       <Route path="/contact" element={<Contact />} />
       {/* dashboard login routes */}
       <Route path="/admin" element={<Adimn />} />
