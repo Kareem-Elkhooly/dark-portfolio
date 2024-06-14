@@ -39,6 +39,10 @@ const LanguageInfoUpdate = () => {
         const form = document.getElementById("updateLanguageInfoForm");
         const formData = new FormData(form);
         const data = Object.fromEntries(formData)
+        const linkRegExp = /^(http(s):\/\/.)[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)$/;
+        const valdateEnLink = linkRegExp.test(data.resumeLinkEn);
+        const valdateArLink = linkRegExp.test(data.resumeLinkAr);
+
         if( !data.firstNameEn 
             || !data.firstNameAr || !data.lastNameEn || !data.lastNameAr || !data.jopEn || !data.jopAr 
             || !data.jopDescriptionEn || !data.jopDescriptionAr || !data.contactDescriptionEn
@@ -49,6 +53,9 @@ const LanguageInfoUpdate = () => {
         ){
             setWaite("no")
             setAlert([sweetAlertErr("opacity-1", "please fill all fields"), true])
+        }else if( !valdateEnLink || !valdateArLink ){
+            setWaite("no")
+            setAlert([sweetAlertErr("opacity-1", "please insert a valid link"), true])
         }else {
             await fetch('https://dark-portfolio-api.onrender.com/api/en-info',{
                 method:'PUT',

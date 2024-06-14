@@ -17,7 +17,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer dir="ltr" className={`${enFontFamily} w-full bg-darkslategray pb-[0.7rem] pt-[0.7rem] text-left text-[1rem] text-darkgray-200`}>
+    <footer dir="ltr" className={`${enFontFamily} w-full bg-darkslategray pb-[1rem] maxmob:pb-[2rem] pt-[0.7rem] text-left text-[1rem] text-darkgray-200`}>
       <div className="main-container flex flex-row maxmob:flex-col-reverse items-center justify-between gap-[1rem] maxmob:flex-wrap">
           {localStorage.getItem("language") === "arabic"?(
             <div dir="rtl" className={`${arFontFamily} text-center leading-[1.6rem] smmob:text-[0.9rem] font-semibold`}>
