@@ -11,7 +11,7 @@ const ContactComp = () => {
     return (
       <>
         {info.loading || info.error ? (
-          <div className="flex flex-col items-center justify-center gap-[1.5rem] p-4 smmob:gap-[1rem] bg-darkslategray max-w-[650px] w-[60%] maxmob:w-[70%] smmob:w-ful rounded-md animate-pulse">
+          <div className="flex flex-col items-center justify-center gap-[1.5rem] p-4 smmob:gap-[1rem] bg-darkslategray max-w-[650px] w-[60%] maxmob:w-[70%] smmob:w-full rounded-md animate-pulse">
             <div className="bg-darkslategray w-[50%] h-9 maxmob:h-7 rounded-md"></div>
             <div className="bg-darkslategray w-[80%] h-9 maxmob:h-7 rounded-md"></div>
             <div className="bg-darkslategray w-[80%] h-9 maxmob:h-7 rounded-md"></div>
@@ -30,8 +30,8 @@ const ContactComp = () => {
   }
 
   return (
-    <section id="contactMe" className={`${enFontFamily} main-container pb-[5rem] mb-8 text-center text-[2rem] text-gainsboro-100`}>
-      <div className="flex flex-col items-center justify-center gap-[1.5rem]">
+    <section id="contactMe" className={`${enFontFamily} main-container pb-[5rem] w-full mb-8 text-center text-[2rem] text-gainsboro-100`}>
+      <div className="flex flex-col items-center justify-center gap-[1.5rem] w-full">
         {localStorage.getItem("language") === "arabic"
         ?(
           <p className={`${arFontFamily} m-0 text-[1.7rem] maxmob:text-[1.6rem] font-medium smmob:text-[1.3rem] inline-block"`}>
