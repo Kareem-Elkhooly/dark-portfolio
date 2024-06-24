@@ -59,7 +59,7 @@ const Project = () => {
         <div className="relative w-full flex items-center maxmob:items-start justify-center maxmob:flex-wrap maxmob:flex-col gap-[2.125rem] maxmob:gap-[3rem]">
             <FontAwesomeIcon 
                 onClick={back} icon={localStorage.getItem("language") === "arabic"?faAngleLeft:faAngleRight} 
-                className={`${localStorage.getItem("language") === "arabic"?"right-0":"left-0"} text-[1.3rem] bg-darkslategray px-4 py-2 maxmob:text-[1.2rem] rounded-md cursor-pointer absolute maxmob:relative top-2`}
+                className={`${localStorage.getItem("language") === "arabic"?"right-0":"left-0"} text-[1.4rem] text-gainsboro-200 bg-darkslategray p-2 rounded-md maxmob:text-[1.3rem] cursor-pointer absolute maxmob:relative top-2`}
             />
             <div className="flex flex-1 maxmob:flex-initial items-start justify-start">
                 <div className="flex flex-col items-start justify-start gap-[0.75rem] maxmob:gap-1">
@@ -73,7 +73,7 @@ const Project = () => {
             </div>
             <div className="relative flex justify-center proj h-[47.688rem] w-[722px] maxlg:h-[40.688rem] maxlg:max-w-[600px] maxmob:max-w-full maxmob:max-h-[30rem] maxmob:self-center bg-darkslategray rounded-md">
             <FontAwesomeIcon onClick={function(){nextImage(project)}} id={"nextOf_"+project._id} icon={faCaretRight}
-              className={`absolute z-10 text-[1.3rem] text-gainsboro-100 bg-[#2D2D2D] hover:bg-gray transition-all duration-100 ease-in ${localStorage.getItem("language") === "arabic"?"rounded-e-md":"rounded-s-md"} pl-[6px] pr-3 py-4 -translate-y-1/2 top-[50%] right-[0px] cursor-pointer`} 
+              className={`absolute z-10 text-[1.3rem] text-gainsboro-200 bg-[#2D2D2D] hover:bg-gray transition-all duration-100 ease-in ${localStorage.getItem("language") === "arabic"?"rounded-e-md":"rounded-s-md"} pl-[6px] pr-3 py-4 -translate-y-1/2 top-[50%] right-[0px] cursor-pointer`} 
             />
             <img
                 onClick={()=>{setCurrentImg(document.getElementById(`img_${project._id}`).src), setCurrentProj(project)}}
@@ -97,7 +97,7 @@ const Project = () => {
                 />
             </div>
             <FontAwesomeIcon onClick={function(){prevImage(project)}} id={"prevOf_"+project._id} icon={faCaretLeft}
-              className={`hidden z-10 absolute text-[1.3rem] text-gainsboro-100 bg-[#2D2D2D] hover:bg-gray transition-all duration-100 ease-in ${localStorage.getItem("language") === "arabic"?"rounded-s-md":"rounded-e-md"} pr-[6px] pl-3 py-4 -translate-y-1/2 top-[50%] left-[0px] cursor-pointer`} 
+              className={`hidden z-10 absolute text-[1.3rem] text-gainsboro-200 bg-[#2D2D2D] hover:bg-gray transition-all duration-100 ease-in ${localStorage.getItem("language") === "arabic"?"rounded-s-md":"rounded-e-md"} pr-[6px] pl-3 py-4 -translate-y-1/2 top-[50%] left-[0px] cursor-pointer`} 
             />
             </div>
         </div>
