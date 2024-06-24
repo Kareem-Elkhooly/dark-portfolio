@@ -73,7 +73,7 @@ const Project = () => {
             </div>
             <div className="relative flex justify-center proj h-[47.688rem] w-[722px] maxlg:h-[40.688rem] maxlg:max-w-[600px] maxmob:max-w-full maxmob:max-h-[30rem] maxmob:self-center bg-darkslategray rounded-md">
             <FontAwesomeIcon onClick={function(){nextImage(project)}} id={"nextOf_"+project._id} icon={faCaretRight}
-                className="absolute z-10 text-[1.3rem] text-darkslategray bg-gainsboro-100 hover:bg-zinc-300 rounded px-[6px] py-4 shadow-lg -translate-y-1/2 top-[50%] right-[-8px] maxmob:right-[8px] cursor-pointer" 
+              className={`absolute z-10 text-[1.3rem] text-gainsboro-100 bg-[#2D2D2D] hover:bg-gray transition-all duration-100 ease-in ${localStorage.getItem("language") === "arabic"?"rounded-e-md":"rounded-s-md"} pl-[6px] pr-3 py-4 -translate-y-1/2 top-[50%] right-[0px] cursor-pointer`} 
             />
             <img
                 onClick={()=>{setCurrentImg(document.getElementById(`img_${project._id}`).src), setCurrentProj(project)}}
@@ -97,7 +97,7 @@ const Project = () => {
                 />
             </div>
             <FontAwesomeIcon onClick={function(){prevImage(project)}} id={"prevOf_"+project._id} icon={faCaretLeft}
-                className="hidden z-10 absolute text-[1.3rem] text-darkslategray bg-gainsboro-100 hover:bg-zinc-300 rounded px-[6px] py-4 shadow-lg -translate-y-1/2 top-[50%] left-[-8px] maxmob:left-[8px] cursor-pointer" 
+              className={`hidden z-10 absolute text-[1.3rem] text-gainsboro-100 bg-[#2D2D2D] hover:bg-gray transition-all duration-100 ease-in ${localStorage.getItem("language") === "arabic"?"rounded-s-md":"rounded-e-md"} pr-[6px] pl-3 py-4 -translate-y-1/2 top-[50%] left-[0px] cursor-pointer`} 
             />
             </div>
         </div>
