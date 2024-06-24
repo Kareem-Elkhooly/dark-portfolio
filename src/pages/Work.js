@@ -134,8 +134,8 @@ const Work = () => {
     <div className="w-full relative bg-gray overflow-hidden tracking-[normal] flex flex-col gap-[3rem] smmob:gap-[1rem]">
       <Header />
         <div id="slideBtnsWork" dir="ltr" className="fixed bottom-[2rem] right-6 z-50 text-zinc-300 hidden flex-col gap-4 text-[1.3rem] maxmob:flex-row transtion-all duration-100 ease-in">
-          <FontAwesomeIcon id="slideBtnWorkUp" className="cursor-pointer text-gainsboro-100 bg-darkslategray hover:bg-gray rounded px-6 py-1 transition-all duration-100 ease-in" icon={faCaretUp} />
-          <FontAwesomeIcon id="slideBtnWorkDown" className="cursor-pointer text-gainsboro-100 bg-darkslategray hover:bg-gray rounded px-6 py-1 transition-all duration-100 ease-in" icon={faCaretDown} />
+          <FontAwesomeIcon id="slideBtnWorkUp" className="cursor-pointer text-gainsboro-200 bg-darkslategray hover:bg-gray rounded px-6 py-1 transition-all duration-100 ease-in" icon={faCaretUp} />
+          <FontAwesomeIcon id="slideBtnWorkDown" className="cursor-pointer text-gainsboro-200 bg-darkslategray hover:bg-gray rounded px-6 py-1 transition-all duration-100 ease-in" icon={faCaretDown} />
         </div>
       <Informations />
       {localStorage.getItem("language") === "arabic"
