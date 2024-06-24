@@ -89,11 +89,11 @@ const Featured = () => {
                 </>)
               :(
                 <>
-                  <div className="flex flex-1 flex-col w-full gap-[1.5rem] text-[2.5rem] maxmob:text-[2rem] smmob:text-[1.5rem]">
+                  <div className="flex flex-1 flex-col w-full gap-[1.5rem] text-[2.2rem] maxmob:text-[2rem] smmob:text-[1.5rem]">
                     {featuredImage(featured.data[0].enName, featured.data[0].image.url)}
                     {featuredImage(featured.data[2].enName, featured.data[2].image.url)}
                   </div>
-                  <div className="flex flex-1 flex-col w-full gap-[1.5rem] text-[2.5rem] maxmob:text-[2rem] smmob:text-[1.5rem] min-h-full pt-[7.625rem] maxmob:pt-[4.375rem] smmob:pt-[2.375rem]">
+                  <div className="flex flex-1 flex-col w-full gap-[1.5rem] text-[2.2rem] maxmob:text-[2rem] smmob:text-[1.5rem] min-h-full pt-[7.625rem] maxmob:pt-[4.375rem] smmob:pt-[2.375rem]">
                     {featuredImage(featured.data[1].enName, featured.data[1].image.url)}
                     {featuredImage(featured.data[3].enName, featured.data[3].image.url)}
                   </div>

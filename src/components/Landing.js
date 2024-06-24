@@ -39,7 +39,7 @@ function Landing(){
                 <p className="m-0">{hiP2} <span className="capitalize">{info.data.firstName + " " + info.data.lastName}</span></p>
                 <p className="m-0">{info.data.jop}</p>
               </h1>
-              <div className="text-[1.4rem] maxmob:text-[1.3rem] smmob:text-[1.2rem] leading-[2.5rem] maxmob:leading-[2rem] smmob:text-center font-medium text-darkgray-200 z-[1]">
+              <div className="text-[1.3rem] maxmob:text-[1.2rem] smmob:text-[1.1rem] leading-[2.2rem] maxmob:leading-[1.8rem] smmob:text-center font-medium text-darkgray-200 z-[1]">
                 <p className={`${textEditP} m-0 max-w-[28rem] maxmob:max-w-[23rem] smmob:max-w-[19rem] text-pretty`}>
                   {info.data.jopDescription}
                 </p>
@@ -59,14 +59,14 @@ function Landing(){
           <div className="bg-darkslategray w-[70%] h-6 rounded-md animate-pulse"></div>
         ):(null)}
         {!info.loading && info.data.availability === true ? (
-          <p className={`${textEdit} flex m-0 items-center gap-2`}>
-            <FontAwesomeIcon icon={faCircle} fade className="bg-zinc-200 text-[0.6rem] smmob:text-[0.5rem] rounded-[50%]"/>
+          <p className={`${textEdit} flex m-0 items-center gap-2 text-gainsboro-200`}>
+            <FontAwesomeIcon icon={faCircle} fade className="text-gainsboro-100 text-[0.6rem] smmob:text-[0.5rem] rounded-[50%]"/>
             {trueText}
           </p>
         ):(null)}
         {!info.loading && info.data.availability === false ? (
-          <p className={`${textEdit} flex m-0 items-center gap-2`}>
-            <FontAwesomeIcon icon={faCircleNotch} spin className={`${iconEdit} text-zinc-200 text-[0.7rem] smmob:text-[0.6rem] rounded-[50%]`}/>
+          <p className={`${textEdit} flex m-0 items-center gap-2 text-gainsboro-200`}>
+            <FontAwesomeIcon icon={faCircleNotch} spin className={`${iconEdit} text-gainsboro-100 text-[0.7rem] smmob:text-[0.6rem] rounded-[50%]`}/>
             {falseText}
           </p>
         ):(null)}
@@ -78,7 +78,7 @@ function Landing(){
     <section className={`${enFontFamily} main-container mt-[10rem] maxmob:mt-[7rem] smmob:mt-[5rem] w-full pb-[1.813rem] text-gainsboro-100`}>
       <div className="w-full flex flex-row justify-between smmob:flex-col-reverse gap-[1.5rem] smmob:items-center">
         {localStorage.getItem("language") === "arabic"
-          ?(textSide(arInfo, ["تحياتي!", "أنـا"], `${arFontFamily} mt-4`, "text-[2.6rem] maxmob:text-[2.2rem] smmob:text-[1.8rem] leading-[3.8rem] maxmob:leading-[3.2rem] smmob:leading-[2.8rem]", "text-[1.3rem] maxmob:text-[1.15rem] leading-[2.6rem] maxmob:leading-[2.25rem]"))
+          ?(textSide(arInfo, ["تحياتي!", "أنـا"], `${arFontFamily} mt-4`, "text-[2.6rem] maxmob:text-[2.2rem] smmob:text-[1.8rem] leading-[3.8rem] maxmob:leading-[3.2rem] smmob:leading-[2.8rem]", "text-[1.3rem] maxmob:text-[1.15rem] leading-[2.3rem] maxmob:leading-[2.05rem]"))
           :(textSide(enInfo, ["Hi There", "I'am"], "", "text-[3.125rem] maxmob:text-[2.2rem] smmob:text-[1.8rem] leading-[4rem] maxmob:leading-[3.2rem] smmob:leading-[2.8rem]", "tracking-[-0.2px]"))
         }
         <div className="flex flex-col justify-center items-center gap-[2rem] maxmob:gap-[1rem]">

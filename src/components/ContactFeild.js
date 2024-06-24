@@ -8,7 +8,7 @@ const ContactFeild = () => {
   return (
     <Link
       to="/contact"
-      className={`${enFontFamily} no-underline align-middle text-darkslategray hover:text-gainsboro-200 smmob:self-center w-[14.5rem] h-[3.3rem] maxmob:h-[2.8rem] maxmob:w-[14rem] smmob:h-[2.6rem] smmob:w-[13rem] rounded-md flex items-center justify-center bg-gainsboro-200 hover:bg-darkslategray transition-all duration-200 ease-in font-semibold text-[1.125rem] maxmob:text-[1rem] smmob:text-[0.9rem]`}
+      className={`${enFontFamily} no-underline align-middle text-darkslategray hover:text-gainsboro-200 px-10 py-4 smmob:self-center rounded-md flex items-center justify-center bg-gainsboro-200 hover:bg-darkslategray transition-all duration-200 ease-in font-semibold text-[1.125rem] maxmob:text-[1rem] smmob:text-[0.9rem] leading-none`}
     >
       {localStorage.getItem("language") === "arabic"
       ?(

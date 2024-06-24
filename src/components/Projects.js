@@ -16,8 +16,8 @@ function Projects() {
   
   return (
     <section id="projects" className={`${enFontFamily} main-container pb-[5rem] w-full text-center text-[2rem] text-gainsboro-100`}>
-      <div className="flex flex-col items-start justify-start gap-[4.063rem] maxmob:gap-[3.5rem]">
-        <div className="flex justify-between w-full items-end pt-[4rem]">
+      <div className="flex flex-col items-start justify-start gap-[3.5rem] maxmob:gap-[2.5rem]">
+        <div className="flex justify-between w-full items-end pt-[4rem] smmob:pt-[2rem]">
           {localStorage.getItem("language") === "arabic"
           ?(
             <>
@@ -52,7 +52,7 @@ function Projects() {
           {!projects.loading && projects.data.length ?(
             <>
               <FontAwesomeIcon  
-                className="absolute text-[1.3rem] text-darkslategray bg-gainsboro-100 hover:bg-zinc-300 rounded px-[6px] py-4 shadow-lg -translate-y-1/2 top-[50%] right-[12px] cursor-pointer smmob:hidden" 
+                className="absolute text-[1.3rem] text-gainsboro-100 bg-darkslategray hover:bg-gray rounded px-2 py-4 -translate-y-1/2 top-[50%] right-[12px] cursor-pointer smmob:hidden" 
                 icon={faCaretRight} onClick={ProjectsSlideRight}
               />
               <div id="projectsSlide" className="projects flex flex-row items-start justify-start gap-[1.5rem] w-full rounded-sm overflow-x-auto no-scrollbar pb-12">
@@ -70,7 +70,7 @@ function Projects() {
                 })}
               </div>
               <FontAwesomeIcon  
-                className="absolute text-[1.3rem] text-darkslategray bg-gainsboro-100 hover:bg-zinc-300 rounded px-[6px] py-4 shadow-lg -translate-y-1/2 top-[50%] left-[12px] cursor-pointer smmob:hidden" 
+                className="absolute text-[1.3rem] text-gainsboro-100 bg-darkslategray hover:bg-gray rounded px-2 py-4 -translate-y-1/2 top-[50%] left-[12px] cursor-pointer smmob:hidden" 
                 icon={faCaretLeft} onClick={ProjectsSlideLeft} 
               />
             </>

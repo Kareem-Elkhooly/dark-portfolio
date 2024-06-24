@@ -16,7 +16,7 @@ const SmallProjects = () => {
   
   return (
     <section id="smallprojects" className={`${enFontFamily} main-container pb-[7rem] w-full text-center text-[2rem] text-gainsboro-100`}>
-      <div className="w-full flex flex-col items-start justify-start gap-[4.063rem] maxmob:gap-[3.5rem] pt-[2rem]">
+      <div className="w-full flex flex-col items-start justify-start gap-[2.5rem] maxmob:gap-[2rem] pt-[1rem] smmob:pt-0">
         {localStorage.getItem("language") === "arabic"
         ?(
           <p id="smallProjectsTitle" className={`${arFontFamily} m-0 font-medium text-[1.7rem] maxmob:text-[1.6rem] smmob:text-[1.3rem] inline-block`}>
@@ -38,7 +38,7 @@ const SmallProjects = () => {
           {!quickProjects.loading && quickProjects.data.length?(
             <>
               <FontAwesomeIcon  
-                className="absolute text-[1.3rem] text-darkslategray bg-gainsboro-100 hover:bg-zinc-300 rounded px-[6px] py-4 shadow-lg -translate-y-1/2 top-[50%] right-[12px] cursor-pointer smmob:hidden" 
+                className="absolute text-[1.3rem] text-gainsboro-100 bg-darkslategray hover:bg-gray rounded px-2 py-4 -translate-y-1/2 top-[50%] right-[12px] cursor-pointer smmob:hidden" 
                 icon={faCaretRight} onClick={ProjectsSlideRight}
               />
               <div id="smallProjectsSlide" className="projects flex flex-row items-start justify-start gap-[1.5rem] w-full rounded-sm overflow-x-auto no-scrollbar">
@@ -64,7 +64,7 @@ const SmallProjects = () => {
                 <img src={currentImg} className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 block max-w-[95%] max-h-[95%] object-contain"/>
               </div>
               <FontAwesomeIcon  
-                className="absolute text-[1.3rem] text-darkslategray bg-gainsboro-100 hover:bg-zinc-300 rounded px-[6px] py-4 shadow-lg -translate-y-1/2 top-[50%] left-[12px] cursor-pointer smmob:hidden" 
+                className="absolute text-[1.3rem] text-gainsboro-100 bg-darkslategray hover:bg-gray rounded px-2 py-4 -translate-y-1/2 top-[50%] left-[12px] cursor-pointer smmob:hidden" 
                 icon={faCaretLeft} onClick={ProjectsSlideLeft}
               />
             </>

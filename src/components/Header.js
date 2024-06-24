@@ -101,15 +101,15 @@ const Header = () => {
     )
   }
 
-  const resumeLink = (info, title, textEdit)=> {
+  const resumeLink = (info, textEdit)=> {
     return(
       <>
         {info.loading || info.error ? (
           <div className="bg-darkslategray w-[70px] h-8 maxmob:h-7 rounded-md animate-pulse"></div>
         ):(null)}
         {!info.loading && info.data.resumeLink ?(
-          <a href={info.data.resumeLink} className={`${textEdit} no-underline flex items-center text-darkslategray bg-gainsboro-200 hover:bg-darkslategray hover:text-gainsboro-200 font-semibold rounded px-5 py-1 transition-all duration-100 ease-in`}>
-            {title}
+          <a href={info.data.resumeLink} className={`${textEdit} tracking-widest no-underline flex items-center text-darkslategray bg-gainsboro-200 hover:bg-darkslategray hover:text-gainsboro-200 font-semibold rounded px-5 py-1 transition-all duration-100 ease-in`}>
+            CV
           </a>
         ):(null)}
       </>
@@ -143,8 +143,8 @@ const Header = () => {
           }
           <li className="z-[1] hidden md:inline-block h-fit ">
             {localStorage.getItem("language") === "arabic"
-              ?(resumeLink(arInfo, "CV", `text-[1.2rem] ${arFontFamily}`))
-              :resumeLink(enInfo, "Resume")
+              ?(resumeLink(arInfo, `text-[1.2rem] ${arFontFamily}`))
+              :resumeLink(enInfo)
             }
           </li>
         </ul>

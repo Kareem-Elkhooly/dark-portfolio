@@ -18,7 +18,7 @@ const ContactComp = () => {
           </div>
         ):(null)}
         {!info.loading && info.data.contactDescription ? (
-          <div className="flex flex-col items-center max-w-[650px] w-[60%] maxmob:w-[70%] smmob:w-full justify-center gap-[1.5rem] leading-[2.6rem] smmob:leading-[2.25rem] text-darkgray-200 maxmob:gap-[1.5rem_3rem]">
+          <div className="flex flex-col items-center max-w-[650px] w-[60%] maxmob:w-[70%] smmob:w-full justify-center gap-[1.5rem] leading-[2.2rem] smmob:leading-[2rem] text-darkgray-200 maxmob:gap-[1.5rem_3rem]">
             <p className={`${textEdit} m-0 font-medium mb-4`}>
               {info.data.contactDescription}
             </p>
@@ -31,7 +31,7 @@ const ContactComp = () => {
 
   return (
     <section id="contactMe" className={`${enFontFamily} main-container pb-[5rem] w-full mb-8 text-center text-[2rem] text-gainsboro-100`}>
-      <div className="flex flex-col items-center justify-center gap-[1.5rem] w-full">
+      <div className="flex flex-col items-center justify-center gap-[1rem] w-full">
         {localStorage.getItem("language") === "arabic"
         ?(
           <p className={`${arFontFamily} m-0 text-[1.7rem] maxmob:text-[1.6rem] font-medium smmob:text-[1.3rem] inline-block"`}>
