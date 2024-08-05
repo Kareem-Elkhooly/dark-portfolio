@@ -81,7 +81,7 @@ const Header = () => {
           <div className="bg-darkslategray w-[100px] h-8 maxmob:h-7 rounded-md animate-pulse"></div>
         ):(null)}
         {!info.loading && info.data.siteName ? (
-          <div id="logo" className={`text-[2.1rem] maxmob:text-[1.85rem] smmob:text-[1.6rem] font-semibold inline-block whitespace-nowrap z-[1]`}>
+          <div id="logo" className={`text-[2rem] maxmob:text-[1.8rem] smmob:text-[1.6rem] font-semibold inline-block whitespace-nowrap z-[1]`}>
             <Link to={"/"} className="siteName no-underline text-gainsboro-100">
               {info.data.siteName}
             </Link>
@@ -120,7 +120,7 @@ const Header = () => {
     <header id="home" dir="ltr" className={`h-[4rem] maxmob:h-[3.5rem] transition-all z-50 bg-darkslategray [backdrop-filter:blur(20px)] w-full text-gainsboro-100 flex fixed top-0`}>
       <div className="main-container flex justify-between items-center w-full">
         {siteName(globalInfo)}
-        <ul className={`${enFontFamily} m-0 list-none flex flex-row items-center justify-between gap-[1.25rem] text-left text-[1.125rem]`}>
+        <ul className={`${enFontFamily} m-0 list-none flex flex-row items-center justify-between gap-[1.25rem] text-left text-[1rem]`}>
           <li className="tracking-[-0.5px] inline-block z-[1] md:hidden">
             <BergurIcon />
           </li>
@@ -130,9 +130,9 @@ const Header = () => {
           {localStorage.getItem("language") === "arabic"
             ?(
               <>
-                {pageTitle("الرئيسية", "", `${arFontFamily} text-[1.25rem]`)}
-                {pageTitle("المشاريع", "work", `${arFontFamily} text-[1.25rem]`)}
-                {pageTitle("الإتصال", "contact", `${arFontFamily} text-[1.25rem]`)}
+                {pageTitle("الرئيسية", "", `${arFontFamily} text-[1.1rem]`)}
+                {pageTitle("المشاريع", "work", `${arFontFamily} text-[1.1rem]`)}
+                {pageTitle("الإتصال", "contact", `${arFontFamily} text-[1.1rem]`)}
               </>)
             :(
               <>
@@ -143,7 +143,7 @@ const Header = () => {
           }
           <li className="z-[1] hidden md:inline-block h-fit ">
             {localStorage.getItem("language") === "arabic"
-              ?(resumeLink(arInfo, `text-[1.2rem] ${arFontFamily}`))
+              ?(resumeLink(arInfo, `text-[1.1rem] ${arFontFamily}`))
               :resumeLink(enInfo)
             }
           </li>

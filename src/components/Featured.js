@@ -9,7 +9,7 @@ const Featured = () => {
 
   const featuredImage = (name, src, textEdit) => {
     return (
-      <div className={`${textEdit} relative h-[20rem] maxmob:h-[16rem] smmob:h-[15rem] w-full group`}>
+      <div className={`${textEdit} relative h-[18rem] maxmob:h-[15rem] smmob:h-[14rem] w-full group`}>
         <img
           className="flex-1 h-full w-full group-hover:opacity-100 opacity-50 transition-all duration-100 ease-in rounded max-w-full overflow-hidden max-h-full object-cover"
           loading="lazy"
@@ -26,7 +26,7 @@ const Featured = () => {
     );
   };
   return (
-    <section id="featured" className={`${enFontFamily} main-container mt-4 pb-[5rem] w-full text-left text-[1rem] text-gainsboro-200`}>
+    <section id="featured" className={`${enFontFamily} main-container mt-[3rem] pb-[6rem] w-full text-left text-[1rem] text-gainsboro-200`}>
       <div className="flex flex-col items-center justify-center gap-[3rem] maxmob:gap-[2.6rem] smmob:gap-[0.5rem]">
         <a
           id="featuredTitle"
@@ -36,13 +36,13 @@ const Featured = () => {
           {localStorage.getItem("language") === "arabic"
           ?(
             <>
-              <p className={`${arFontFamily} leading-[1rem] text-[1.25rem] smmob:text-[1.15rem] uppercase`}>
+              <p className={`${arFontFamily} leading-[1rem] text-[1.1rem] smmob:text-[1rem] uppercase`}>
                 الميزات
               </p>
               <FontAwesomeIcon
                 icon={faAnglesDown}
                 bounce
-                className="cursor-pointer transition-all duration-75 ease-in text-[1rem]"
+                className="cursor-pointer transition-all duration-75 ease-in text-[0.9rem]"
               />
             </>
             )
@@ -78,22 +78,22 @@ const Featured = () => {
               {localStorage.getItem("language") === "arabic"
               ?(
                 <>
-                  <div className={`${arFontFamily} flex flex-1 flex-col w-full gap-[1.5rem] font-semibold text-[2rem] maxmob:text-[1.8rem] smmob:text-[1.6rem]`}>
+                  <div className={`${arFontFamily} flex flex-1 flex-col w-full gap-[1.5rem] font-semibold text-[1.7rem] maxmob:text-[1.57rem] smmob:text-[1.47rem]`}>
                     {featuredImage(featured.data[0].arName, featured.data[0].image.url)}
                     {featuredImage(featured.data[2].arName, featured.data[2].image.url)}
                   </div>
-                  <div className={`${arFontFamily} flex flex-1 flex-col w-full gap-[1.5rem] font-semibold text-[2rem] maxmob:text-[1.8rem] smmob:text-[1.6rem] min-h-full pt-[7.625rem] maxmob:pt-[4.375rem] smmob:pt-[2.375rem]`}>
+                  <div className={`${arFontFamily} flex flex-1 flex-col w-full gap-[1.5rem] font-semibold text-[1.7rem] maxmob:text-[1.57rem] smmob:text-[1.47rem] min-h-full pt-[7.625rem] maxmob:pt-[4.375rem] smmob:pt-[2.375rem]`}>
                     {featuredImage(featured.data[1].arName, featured.data[1].image.url)}
                     {featuredImage(featured.data[3].arName, featured.data[3].image.url)}
                   </div>
                 </>)
               :(
                 <>
-                  <div className="flex flex-1 flex-col w-full gap-[1.5rem] text-[2.2rem] maxmob:text-[2rem] smmob:text-[1.5rem]">
+                  <div className="flex flex-1 flex-col w-full gap-[1.5rem] text-[1.9rem] maxmob:text-[1.65rem] smmob:text-[1.5rem]">
                     {featuredImage(featured.data[0].enName, featured.data[0].image.url)}
                     {featuredImage(featured.data[2].enName, featured.data[2].image.url)}
                   </div>
-                  <div className="flex flex-1 flex-col w-full gap-[1.5rem] text-[2.2rem] maxmob:text-[2rem] smmob:text-[1.5rem] min-h-full pt-[7.625rem] maxmob:pt-[4.375rem] smmob:pt-[2.375rem]">
+                  <div className="flex flex-1 flex-col w-full gap-[1.5rem] text-[1.9rem] maxmob:text-[1.65rem] smmob:text-[1.5rem] min-h-full pt-[7.625rem] maxmob:pt-[4.375rem] smmob:pt-[2.375rem]">
                     {featuredImage(featured.data[1].enName, featured.data[1].image.url)}
                     {featuredImage(featured.data[3].enName, featured.data[3].image.url)}
                   </div>

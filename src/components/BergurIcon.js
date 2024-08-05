@@ -12,7 +12,6 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-
 export default function BergurIcon() {
   const enInfo = useSelector((state) => state.enInfo);
   const arInfo = useSelector((state) => state.arInfo); 

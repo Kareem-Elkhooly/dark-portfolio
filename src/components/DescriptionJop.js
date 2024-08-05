@@ -36,10 +36,10 @@ export default function DescriptionJop() {
       {localStorage.getItem("language") === "arabic"
       ?(fainalLetter(arInfo, 
         `${arFontFamily} text-[1.2rem] smmob:text-[1.1rem] leading-[1rem] font-semibold`, 
-        `${arFontFamily} text-[1.4rem] maxmob:text-[1.25rem] smmob:text-[1.15rem] leading-[3rem] maxmob:leading-[2.6rem] smmob:leading-[2.3rem]`))
+        `${arFontFamily} text-[1.3rem] maxmob:text-[1.2rem] smmob:text-[1.1rem] leading-[3rem] maxmob:leading-[2.6rem] smmob:leading-[2.3rem]`))
       :(fainalLetter(enInfo, 
         "tracking-[1.5px] leading-[1rem]", 
-        "text-[1.7rem] maxmob:text-[1.5rem] smmob:text-[1.25rem] leading-[3.25rem] maxmob:leading-[2.75rem] smmob:leading-[2.55rem] tracking-[-0.5px]"))
+        "text-[1.4rem] maxmob:text-[1.3rem] smmob:text-[1.2rem] leading-[2.95rem] maxmob:leading-[2.55rem] smmob:leading-[2.35rem] tracking-[-0.5px]"))
       }
     </section>
   );

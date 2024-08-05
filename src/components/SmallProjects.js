@@ -15,21 +15,21 @@ const SmallProjects = () => {
   }
   
   return (
-    <section id="smallprojects" className={`${enFontFamily} main-container pb-[7rem] w-full text-center text-[2rem] text-gainsboro-100`}>
+    <section id="smallprojects" className={`${enFontFamily} main-container pb-[8rem] w-full text-center text-[1.8rem] text-gainsboro-100`}>
       <div className="w-full flex flex-col items-start justify-start gap-[2.5rem] maxmob:gap-[2rem] pt-[1rem] smmob:pt-0">
         {localStorage.getItem("language") === "arabic"
         ?(
-          <p id="smallProjectsTitle" className={`${arFontFamily} m-0 font-medium text-[1.7rem] maxmob:text-[1.6rem] smmob:text-[1.3rem] inline-block`}>
+          <p id="smallProjectsTitle" className={`${arFontFamily} m-0 font-medium text-[1.6rem] maxmob:text-[1.5rem] smmob:text-[1.3rem] inline-block`}>
             مشاريع صغيرة
           </p>)
         :(
-          <p id="smallProjectsTitle" className="m-0 text-inherit maxmob:text-[1.8rem] smmob:text-[1.5rem] font-bold font-inherit inline-block">
+          <p id="smallProjectsTitle" className="m-0 text-inherit maxmob:text-[1.7rem] smmob:text-[1.5rem] font-bold font-inherit inline-block">
             Quick Projects
           </p>)
         }
         <div className="relative w-full">
           {quickProjects.loading || quickProjects.error ? (
-            <div className="projects flex flex-row items-start justify-start gap-[1.5rem] w-full overflow-hidden rounded animate-pulse">
+            <div className="projects flex flex-row items-start justify-start gap-[1rem] w-full overflow-hidden rounded animate-pulse">
               <div className="bg-darkslategray rounded-md h-[25.5rem] min-w-[25rem] maxmob:h-[20.5rem] maxmob:min-w-[20rem]"></div>
               <div className="bg-darkslategray rounded-md h-[25.5rem] min-w-[25rem] maxmob:h-[20.5rem] maxmob:min-w-[20rem]"></div>
               <div className="bg-darkslategray rounded-md h-[25.5rem] min-w-[25rem] maxmob:h-[20.5rem] maxmob:min-w-[20rem]"></div>
@@ -41,7 +41,7 @@ const SmallProjects = () => {
                 className="absolute text-[1.3rem] text-gainsboro-100 bg-darkslategray hover:bg-gray rounded px-2 py-4 -translate-y-1/2 top-[50%] right-[12px] cursor-pointer smmob:hidden" 
                 icon={faCaretRight} onClick={ProjectsSlideRight}
               />
-              <div id="smallProjectsSlide" className="projects flex flex-row items-start justify-start gap-[1.5rem] w-full rounded-sm overflow-x-auto no-scrollbar">
+              <div id="smallProjectsSlide" className="projects flex flex-row items-start justify-start gap-[1rem] w-full rounded-sm overflow-x-auto no-scrollbar">
               {quickProjects.data.map((project) => {
                 return (
                     <img

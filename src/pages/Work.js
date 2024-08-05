@@ -46,7 +46,7 @@ const Work = () => {
 
   const projectShow = (project, language, titleEdit, textEdit, dir)=>{
     return (
-       <div id={project._id} className={`${dir} w-full min-h-screen flex items-center maxmob:items-start justify-center maxmob:flex-wrap maxmob:flex-col gap-[2.125rem] maxmob:gap-[3rem]`}>
+      <div id={project._id} className={`${dir} w-full min-h-screen flex items-center maxmob:items-start justify-center maxmob:flex-wrap maxmob:flex-col gap-[2.125rem] maxmob:gap-[3rem]`}>
         <div className="flex flex-1 maxmob:flex-initial items-start justify-start">
           <div className="flex flex-col items-start justify-start gap-[0.75rem] maxmob:gap-1">
             <p className={`${titleEdit} uppercase inline-block text-nowrap max-w-full text-ellipsis pb-2 m-0`}>
@@ -57,7 +57,7 @@ const Work = () => {
             </p>
           </div>
         </div>
-        <div className="relative flex justify-center proj h-[47.688rem] w-[722px] maxlg:h-[40.688rem] maxlg:max-w-[600px] maxmob:max-w-full maxmob:max-h-[30rem] maxmob:self-center bg-darkslategray rounded-md">
+        <div className="relative flex justify-center proj h-[43rem] w-[700px] maxlg:h-[40.688rem] maxlg:max-w-[600px] maxmob:max-w-full maxmob:max-h-[30rem] maxmob:self-center bg-darkslategray rounded-md">
           <FontAwesomeIcon onClick={function(){nextImage(project)}} id={"nextOf_"+project._id} icon={faCaretRight}
             className={`absolute z-10 text-[1.3rem] text-gainsboro-200 bg-[#2D2D2D] hover:bg-gray transition-all duration-100 ease-in ${localStorage.getItem("language") === "arabic"?"rounded-e-md":"rounded-s-md"} pl-[6px] pr-3 py-4 -translate-y-1/2 top-[50%] right-[0px] cursor-pointer`} 
           />
@@ -140,22 +140,22 @@ const Work = () => {
       <Informations />
       {localStorage.getItem("language") === "arabic"
       ?(projectsRun("ar", `${arFontFamily} leading-[0.8rem] text-[1.2rem] smmob:text-[1.1rem] font-semibold`, 
-      `${arFontFamily} text-right text-[1.4rem] maxmob:text-[1.25rem] smmob:text-[1.15rem] leading-[3rem] maxmob:leading-[2.65rem] smmob:leading-[2.45rem]`))
+      `${arFontFamily} text-right text-[1.3rem] maxmob:text-[1.2rem] smmob:text-[1.1rem] leading-[2.85rem] maxmob:leading-[2.65rem] smmob:leading-[2.45rem]`))
       :(projectsRun("en", "tracking-[2px] leading-[1rem]", 
-      "text-[1.7rem] maxmob:text-[1.5rem] smmob:text-[1.25rem] leading-[3.25rem] maxmob:leading-[2.75rem] smmob:leading-[2.55rem] tracking-[-0.5px]"))}
+      "text-[1.4rem] maxmob:text-[1.3rem] smmob:text-[1.2rem] leading-[2.95rem] maxmob:leading-[2.55rem] smmob:leading-[2.35rem] tracking-[-0.5px]"))}
       <DescriptionJop />
       {localStorage.getItem("language") === "arabic"
       ?(
         <div className="main-container text-center mb-16 flex items-center justify-center">
           <Link to="/contact" 
-            className={`${arFontFamily} text-right text-[1.1rem] smmob:text-[1rem] font-medium text-gainsboro-200 hover:text-gainsboro-100 transition-all duration-75 ease-in cursor-pointer px-4 py-[6px] bg-darkslategray rounded-md no-underline`}>
+            className={`${arFontFamily} text-right text-[1rem] smmob:text-[0.9rem] font-medium text-gainsboro-200 hover:text-gainsboro-100 transition-all duration-75 ease-in cursor-pointer px-4 py-[6px] bg-darkslategray rounded-md no-underline`}>
             لنبداء العمل
           </Link>
         </div>)
       :(
         <div className="main-container text-center mb-16 flex items-center justify-center gap-0">
           <Link to="/contact" 
-            className={`${enFontFamily} text-left text-[1.1rem] uppercase smmob:text-[1rem] font-medium text-gainsboro-200 hover:text-gainsboro-100 transition-all duration-75 ease-in cursor-pointer px-4 py-[6px] bg-darkslategray rounded-md no-underline`}>
+            className={`${enFontFamily} text-left text-[1rem] uppercase smmob:text-[0.9rem] font-medium text-gainsboro-200 hover:text-gainsboro-100 transition-all duration-75 ease-in cursor-pointer px-4 py-[6px] bg-darkslategray rounded-md no-underline`}>
             Hire Me
           </Link>
         </div>)}

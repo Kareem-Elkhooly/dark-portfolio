@@ -131,24 +131,24 @@ const Informations = () => {
           statisticsTitles(arInfo, "مشاريع وإحصائيات", 
           `${arFontFamily} leading-[0.8rem] text-[1.2rem] smmob:text-[1.1rem] font-semibold`, 
           "إطلع على بعض الإحصائيات عن عملي.", 
-          `text-[1.4rem] maxmob:text-[1.25rem] smmob:text-[1.15rem] ${arFontFamily}`)
+          `text-[1.35rem] maxmob:text-[1.25rem] smmob:text-[1.15rem] ${arFontFamily}`)
         ):(
           statisticsTitles(enInfo, "Projects and Statistics", 
           "tracking-[1.5px] leading-[1rem]", 
           "Look at some statistics about my business.", 
-          "text-[1.8rem] maxmob:text-[1.625rem] smmob:text-[1.188rem] tracking-[-0.5px]")
+          "text-[1.4rem] maxmob:text-[1.4rem] smmob:text-[1.17rem] tracking-[-0.5px]")
         )}
         {localStorage.getItem("language") === "arabic"
         ?(statistics(arInfo, `leading-[1rem] text-[1.2rem] smmob:text-[1.1rem] ${arFontFamily}`, 
-        `${arFontFamily} text-[1.25rem] smmob:text-[1.15rem] leading-[1.875rem] smmob:leading-[1.5rem] text-gainsboro-100`,
+        `${arFontFamily} text-[1.2rem] smmob:text-[1.15rem] leading-[1.875rem] smmob:leading-[1.5rem] text-gainsboro-100`,
         ["العملاء", "العمل", "إجمالي المشاريع", "متوسط الوقت"]))
         :(statistics(enInfo, "tracking-[1.5px] leading-[1rem]", 
-        "text-[1.25rem] smmob:text-[1rem] leading-[1.875rem] smmob:leading-[1.5rem] tracking-[-0.5px] text-gainsboro-100",
+        "text-[1.2rem] smmob:text-[1.15rem] leading-[1.875rem] smmob:leading-[1.5rem] tracking-[-0.5px] text-gainsboro-100",
         ["clients", "jop", "total products", "time avrage"]))
         }
         {localStorage.getItem("language") === "arabic"
-          ?(showProjectsBtn("إبداء عرض المشاريع", `${arFontFamily} text-[1.1rem] smmob:text-[1rem]`))
-          :(showProjectsBtn("Start Show My Projects", "tracking-[1.5px]"))
+          ?(showProjectsBtn("إبداء عرض المشاريع", `${arFontFamily} text-[1rem]`))
+          :(showProjectsBtn("Start Show My Projects", "tracking-[1.5px] text-[0.9rem]"))
         }
       </div>
     </section>

@@ -39,7 +39,7 @@ function Landing(){
                 <p className="m-0">{hiP2} <span className="capitalize">{info.data.firstName + " " + info.data.lastName}</span></p>
                 <p className="m-0">{info.data.jop}</p>
               </h1>
-              <div className="text-[1.3rem] maxmob:text-[1.2rem] smmob:text-[1.1rem] leading-[2.2rem] maxmob:leading-[1.8rem] smmob:text-center font-medium text-darkgray-200 z-[1]">
+              <div className="text-[1.2rem] maxmob:text-[1.1rem] smmob:text-[1rem] leading-[2.1rem] maxmob:leading-[1.7rem] smmob:text-center font-medium text-darkgray-200 z-[1]">
                 <p className={`${textEditP} m-0 max-w-[28rem] maxmob:max-w-[23rem] smmob:max-w-[19rem] text-pretty`}>
                   {info.data.jopDescription}
                 </p>
@@ -78,8 +78,8 @@ function Landing(){
     <section className={`${enFontFamily} main-container mt-[10rem] maxmob:mt-[7rem] smmob:mt-[5rem] w-full pb-[1.813rem] text-gainsboro-100`}>
       <div className="w-full flex flex-row justify-between smmob:flex-col-reverse gap-[1.5rem] smmob:items-center">
         {localStorage.getItem("language") === "arabic"
-          ?(textSide(arInfo, ["تحياتي!", "أنـا"], `${arFontFamily} mt-4`, "text-[2.6rem] maxmob:text-[2.2rem] smmob:text-[1.8rem] leading-[3.8rem] maxmob:leading-[3.2rem] smmob:leading-[2.8rem]", "text-[1.3rem] maxmob:text-[1.15rem] leading-[2.3rem] maxmob:leading-[2.05rem]"))
-          :(textSide(enInfo, ["Hi There", "I'am"], "", "text-[3.125rem] maxmob:text-[2.2rem] smmob:text-[1.8rem] leading-[4rem] maxmob:leading-[3.2rem] smmob:leading-[2.8rem]", "tracking-[-0.2px]"))
+          ?(textSide(arInfo, ["تحياتي!", "أنـا"], `${arFontFamily} mt-4`, "text-[2.3rem] maxmob:text-[1.9rem] smmob:text-[1.7rem] leading-[3.5rem] maxmob:leading-[2.95rem] smmob:leading-[2.6rem]", "text-[1.1rem] maxmob:text-[1.02rem] leading-[2.1rem] maxmob:leading-[1.8rem]"))
+          :(textSide(enInfo, ["Hi There", "I'am"], "", "text-[2.8rem] maxmob:text-[2rem] smmob:text-[1.8rem] leading-[3.7rem] maxmob:leading-[2.9rem] smmob:leading-[2.7rem]", "tracking-[-0.2px]"))
         }
         <div className="flex flex-col justify-center items-center gap-[2rem] maxmob:gap-[1rem]">
           <div className="w-[25rem] maxmob:w-[18rem] smmob:w-[16rem] h-[25rem] maxmob:h-[18rem] smmob:h-[16rem]">
@@ -96,8 +96,8 @@ function Landing(){
             ) :(null)}
           </div>
           {localStorage.getItem("language") === "arabic"
-            ?(photoSide(globalInfo, ["متاح للعمل الآن", "يعمل على مشروع"], `${arFontFamily} text-[1.1rem] maxmob:text-[1rem]`, "mt-1"))
-            :(photoSide(globalInfo, ["Avaliable for hire", "Working on a project"], "text-[1.1rem] maxmob:text-[1rem]"))
+            ?(photoSide(globalInfo, ["متاح للعمل الآن", "يعمل على مشروع"], `${arFontFamily} text-[1rem]`, "mt-1"))
+            :(photoSide(globalInfo, ["Avaliable for hire", "Working on a project"], "text-[1rem]"))
           }
         </div>
       </div>

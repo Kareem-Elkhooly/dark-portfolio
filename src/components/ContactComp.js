@@ -30,21 +30,21 @@ const ContactComp = () => {
   }
 
   return (
-    <section id="contactMe" className={`${enFontFamily} main-container pb-[5rem] w-full mb-8 text-center text-[2rem] text-gainsboro-100`}>
+    <section id="contactMe" className={`${enFontFamily} main-container pb-[5rem] w-full mb-8 text-center text-[1.8rem] text-gainsboro-100`}>
       <div className="flex flex-col items-center justify-center gap-[1rem] w-full">
         {localStorage.getItem("language") === "arabic"
         ?(
-          <p className={`${arFontFamily} m-0 text-[1.7rem] maxmob:text-[1.6rem] font-medium smmob:text-[1.3rem] inline-block"`}>
+          <p className={`${arFontFamily} m-0 text-[1.6rem] maxmob:text-[1.5rem] font-medium smmob:text-[1.3rem] inline-block"`}>
             تواصل معي
           </p>
         ):(
-          <p className="m-0 text-inherit maxmob:text-[1.8rem] smmob:text-[1.5rem] font-bold font-inherit inline-block">
+          <p className="m-0 text-inherit maxmob:text-[1.7rem] smmob:text-[1.5rem] font-bold font-inherit inline-block">
             Contact Me
           </p>
         )}
         {localStorage.getItem("language") === "arabic"
-          ?(description(arInfo, `${arFontFamily} text-[1.25rem] smmob:text-[1.1rem]`))
-          :(description(enInfo, "tracking-[-0.5px] text-[1.4rem] maxmob:text-[1.3rem] smmob:text-[1.2rem]"))
+          ?(description(arInfo, `${arFontFamily} text-[1.18rem] smmob:text-[1.05rem]`))
+          :(description(enInfo, "tracking-[-0.5px] text-[1.2rem] maxmob:text-[1.1rem] smmob:text-[1rem]"))
         }
       </div>
     </section>

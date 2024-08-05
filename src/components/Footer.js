@@ -20,7 +20,7 @@ const Footer = () => {
     <footer dir="ltr" className={`${enFontFamily} w-full bg-darkslategray pb-[1rem] maxmob:pb-[2rem] pt-[0.7rem] text-left text-[1rem] text-darkgray-200`}>
       <div className="main-container flex flex-row maxmob:flex-col-reverse items-center justify-between gap-[1rem] maxmob:flex-wrap">
           {localStorage.getItem("language") === "arabic"?(
-            <div dir="rtl" className={`${arFontFamily} text-center leading-[1.6rem] smmob:text-[0.9rem] font-semibold`}>
+            <div dir="rtl" className={`${arFontFamily} text-center leading-[1.6rem] smmob:text-[0.9rem]`}>
               <span>طور بواسطة كريم الخولي</span>
               <FontAwesomeIcon icon={faHeart} className="mx-[5px] text-[#f05151] transition"/>
               حقوق الطبع والنشر
@@ -29,7 +29,7 @@ const Footer = () => {
               <span> كل الحقوق محفوظة.</span>
             </div>
           ):(
-            <div className="tracking-[-0.5px] text-center leading-[1.5rem] smmob:text-[1rem] font-semibold">
+            <div className="tracking-[-0.5px] text-center leading-[1.5rem] smmob:text-[1rem]">
               Developed by Karim Elkhouly
               <FontAwesomeIcon icon={faHeart} className="mx-[5px] text-[#f05151] transition"/>
               Copyright
