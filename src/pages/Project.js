@@ -142,9 +142,9 @@ const Project = () => {
     <div className="w-full relative bg-gray overflow-hidden tracking-[normal] flex flex-col gap-[3rem] smmob:gap-[1rem]">
       {localStorage.getItem("language") === "arabic"
       ?(projectRun("ar", `${arFontFamily} leading-[0.8rem] text-[1.2rem] smmob:text-[1.1rem] font-semibold`, 
-      `${arFontFamily} text-right text-[1.4rem] maxmob:text-[1.25rem] smmob:text-[1.15rem] leading-[3rem] maxmob:leading-[2.65rem] smmob:leading-[2.45rem]`))
+      `${arFontFamily} text-right text-[1.3rem] maxmob:text-[1.2rem] smmob:text-[1.1rem] leading-[2.85rem] maxmob:leading-[2.65rem] smmob:leading-[2.45rem]`))
       :(projectRun("en", "tracking-[2px] leading-[1rem]", 
-      "text-[1.7rem] maxmob:text-[1.5rem] smmob:text-[1.25rem] leading-[3.25rem] maxmob:leading-[2.75rem] smmob:leading-[2.55rem] tracking-[-0.5px]"))}
+      "text-[1.4rem] maxmob:text-[1.3rem] smmob:text-[1.2rem] leading-[2.95rem] maxmob:leading-[2.55rem] smmob:leading-[2.35rem] tracking-[-0.5px]"))}
     </div>
   );
 };
